@@ -16,7 +16,7 @@ jobs:
         env:
           SUPER_SECRET: ${{ secrets.DOCKERHUB_USERNAME }}
         run: |
-          echo "$SUPER_SCRET"
+          echo "$SUPER_SECRET"
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v2
