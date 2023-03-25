@@ -4,7 +4,7 @@ on:
     branches: [main]
     workflow-dispatch:
 jobs:
-  hello-world:
+  Prj4-workflow:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Project 4"
