@@ -1,5 +1,5 @@
-name: my-first-flow
-on:
+name: Project4-work-flow
+on: 
   push:
     branches: [main]
     workflow-dispatch:
@@ -7,11 +7,8 @@ jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps:
-      - run echo "Hello World!"
+      - run: echo "Project 4"
       - uses: actions/checkout@v2
       - run: ls
-        #- docker login -u weichen66 -pass Cw1010sktc10
-      - run: echo "Goodbye!"
-
-
-
+#      - docker login -u weichen66 -pass wait
+      - run: echo "Done"
