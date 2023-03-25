@@ -7,7 +7,7 @@ jobs:
   Prj4-workflow:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Project 4"
+      - run: echo "Project 4 WF"
       - uses: actions/checkout@v2
       - run: ls
 #      - docker login -u weichen66 -pass wait
