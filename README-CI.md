@@ -1,3 +1,4 @@
+## Part 1 - Dockerize it
 ## CI Project Overview
 - In this project, we are using docker desktop to build containers and images which enables applications to run consistently across different environments.
 
@@ -12,3 +13,14 @@
  - Open broswer and search http://IPaddress:80
 
 ![Screenshot of web](CI.jpg)
+
+
+
+## Part 2 - GitHub Actions and DockerHub
+- Process to create repo on dockerhub: Click Create repository on dockerhub, choose your account name and type repo name.
+- How to authenticate with DockerHub via CLI using Dockerhub credentials: Go to acount setting and security to create a token.
+- How to push container image to Dockerhub: docker push weichen66/ceg3120:tagname
+- Configuring GitHub Secrets:
+    1, In repo settings click action under secrets and variables to create secrets.
+    2, Secrets are set: DOCKERHUB_USERNAME and DOCKERHUB_TOKEN
+
