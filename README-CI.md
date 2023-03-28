@@ -1,6 +1,6 @@
 ## Part 1 - Dockerize it
 ## CI Project Overview
-- In this project, we are using docker desktop to build containers and images which enables applications to run consistently across different environments.
+- Continuous integration is a sofetware development practice which developers frequently integrat their code changes into a shared repository which verified by an automated build process. We are using docker desktop to build containers and images which enables applications to run consistently across different environments.
 
 
 ## how to install docker + dependencies:
