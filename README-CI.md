@@ -13,7 +13,7 @@
 ## how to view the project running in the container
  - Open broswer and search http://IPaddress:80
 
-![Screenshot of web](wenindex.jpg)
+![Screenshot of web](webindex.jpg)
 
 
 
