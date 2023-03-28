@@ -27,3 +27,6 @@
  - What does workflow do? Workflow is a automated process which run one or more jobs, and it will runs when triggered by the event in the repository.
  - User name and token of dockerhub is unique to users 
 
+
+## Part 3- CI process
+![Screenshot of CI](CI.jpg)
