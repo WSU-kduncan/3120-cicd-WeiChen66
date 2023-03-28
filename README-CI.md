@@ -29,4 +29,4 @@
 
 
 ## Part 3- CI process
-![Screenshot of CI](CI.jpg)
+![Screenshot of CI](CI1.jpg)
