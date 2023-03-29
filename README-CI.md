@@ -24,8 +24,9 @@
 - Configuring GitHub Secrets:
     1, In repo settings click action under secrets and variables to create secrets.
     2, Secrets are set: DOCKERHUB_USERNAME and DOCKERHUB_TOKEN
-- What does workflow do? Workflow is a automated process which run one or more jobs, and it will runs when triggered by the event in the repository.
+- What does workflow do? Workflow is a automated process which run one or more jobs, and it will runs when triggered by the event in the repository. In my workflow, it check out the main branch of the repository, set up the QEMU for emulation and docker buildx for building and push docker images. Login in to docker hub using username and token, final build and push the docker images to the docker hub repository once is triggered.
 - What variables in workflow are custom :Environment variables, paths, workflow triggers, job dependencies and action versions. 
+- What need to be changed if someone else is going to use it or you reuse it: 1, The name of workflow. 2, The branches that trigger the workflow. 3, Environment variable. 4, Docker images tag. 5, The actions.
 
 
 ## Part 3- CI process
