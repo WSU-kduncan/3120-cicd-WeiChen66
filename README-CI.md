@@ -31,4 +31,4 @@
 
 
 ## Part 3- CI process
-![Screenshot of CI](.jpg)
+![Screenshot of CI](revised.jpg)
