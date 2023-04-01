@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
     workflow-dispatch:
+    tags:
+      - "v*.*.*"
 jobs:
   Prj4-workflow:
     runs-on: ubuntu-latest
@@ -17,6 +19,15 @@ jobs:
           SUPER_SECRET: ${{ secrets.DOCKERHUB_USERNAME }}
         run: |
           echo "$SUPER_SECRET"
+      - name: Collecting tag
+        id: mata
+        uses: docker/matadata-action@v4
+        with: 
+          images: |
+            weichen66/ceg3120
+          tags: |
+            type=semver,pattern={{major}}
+            type=semver,pattern={{major}}.{{minor}}
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -34,4 +45,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: weichen66/ceg3120:latest
+            #tags: weichen66/ceg3120:latest
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }} 
