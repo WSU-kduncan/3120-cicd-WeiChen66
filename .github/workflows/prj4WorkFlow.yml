@@ -25,9 +25,9 @@ jobs:
         with:
           images: |
             weichen66/ceg3120
-        tags: |
-          type=semver,pattern={{major}}
-          type=semver,pattern={{major}}.{{minor}}
+          tags: |
+            type=semver,pattern={{major}}
+            type=semver,pattern={{major}}.{{minor}}
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v2
