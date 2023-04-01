@@ -21,7 +21,7 @@ jobs:
           echo "$SUPER_SECRET"
       - name: Collecting tag
         id: mata
-        uses: docker/matadata-action@v4
+        uses: docker/metadata-action@v4
         with: 
           images: |
             weichen66/ceg3120
