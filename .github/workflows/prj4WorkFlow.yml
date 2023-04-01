@@ -48,4 +48,4 @@ jobs:
           push: true
             #tags: weichen66/ceg3120:latest
           tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }} 
+          labels: ${{ steps.meta.outputs.labels }}
