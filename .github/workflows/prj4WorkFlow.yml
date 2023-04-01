@@ -19,6 +19,7 @@ jobs:
           SUPER_SECRET: ${{ secrets.DOCKERHUB_USERNAME }}
         run: |
           echo "$SUPER_SECRET"
+      - 
       - name: Collecting tag
         id: mata
         uses: docker/metadata-action@v4
