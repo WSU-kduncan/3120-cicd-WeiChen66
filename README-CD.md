@@ -8,12 +8,12 @@
 - How to install Docker to your instance: sudo apt install docker
 - Container restart script
   - Justification & description of what it does: The restart script runs and carries out the setup before begins executing the application and it helps automate the restarting of containers.
-  - Where it should be on the instance (if someone were to use your setup): It should be located on the instance where container runs on.
+  - Where it should be on the instance (if someone were to use your setup): It should be located on the instance where container runs on, specifially it should loacated on home directory of the instance.
 - Setting up a `webhook` on the instance
   - How to install [adnanh's `webhook`](https://github.com/adnanh/webhook) to the instance: sudo apt-get install webhook
   - How to start the `webhook`: sudo systemctl restart webhook
 - `webhook` task definition file
   - Description of what it does: It specifies the options and configuration for a container that is intended to receive webhook events.
-  - Where it should be on the instance (if someone were to use your setup): It should stored in /ect.
-- How to configure GitHub OR DockerHub to message the listener: In your repo setting, click on Webhooks and add webhook, then enter payload URL for listener finally select the events for which you want to receive nitifiations.
+  - Where it should be on the instance (if someone were to use your setup): It should stored in /etc.
+- How to configure GitHub OR DockerHub to message the listener: In your repository setting, click on Webhooks and add webhook, then enter payload URL for listener finally select the events for which you want to receive nitifiations.
 
