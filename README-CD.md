@@ -16,4 +16,4 @@
   - Description of what it does: It specifies the options and configuration for a container that is intended to receive webhook events.
   - Where it should be on the instance (if someone were to use your setup): It should stored in /etc.
 - How to configure GitHub OR DockerHub to message the listener: In your repository setting, click on Webhooks and add webhook, then enter payload URL for listener finally select the events for which you want to receive nitifiations.
-
+-![Screenshot of CD](cd.jpg)
